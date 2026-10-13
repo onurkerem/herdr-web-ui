@@ -4,6 +4,7 @@ Browser UI for the herdr terminal multiplexer: a React 18 + xterm.js client (`sr
 
 ## Scope
 
+- This is a personal fork: `INSTRUCTIONS.md` at the repo root records the fork owner's preferences and standing instructions. Read it at the start of every session and follow it over upstream conventions where they differ. Whenever you learn a new preference, correction or standing instruction from the owner, update `INSTRUCTIONS.md` in the same session.
 - This file, `server/AGENTS.md`, `src/AGENTS.md`, `scripts/AGENTS.md` and `shared/AGENTS.md` are committed and apply to every agent working on the project, forks included. A PR is checked against them together with `CONTRIBUTING.md`, `.github/REVIEW.md`, `docs/development.md` and `DESIGN.md`.
 - They hold only what the code and those documents do not show. Commands, layout, environment variables and release steps are in `docs/development.md` and `package.json`; do not copy them here.
 - Read `server/AGENTS.md` before editing `server/` and `src/AGENTS.md` before editing `src/`; likewise `scripts/AGENTS.md` for `scripts/` and `shared/AGENTS.md` for `shared/`.
