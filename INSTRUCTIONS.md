@@ -22,3 +22,4 @@ restacking on upstream changes.
 <!-- Agents: append dated entries below. Newest last. -->
 
 - 2026-10-13 — Commit frequently as work progresses, so each meaningful step lands as a commit. NEVER push — not to any branch, remote or fork — unless the owner explicitly asks for a push in that instance.
+- 2026-10-29 — The app must NOT be run by hand with `bun run start` in a terminal. It runs as the macOS LaunchAgent `dev.keremini.herdr-web-ui` (`~/Library/LaunchAgents/dev.keremini.herdr-web-ui.plist`): RunAtLoad + KeepAlive, `bun run start` in this checkout at login/after reboot, starts headless `herdr server` first when `~/.config/herdr/herdr.sock` is missing. Logs: `~/Library/Logs/herdr-web-ui/`. After a codebase change, release with `launchctl kickstart -k gui/$(id -u)/dev.keremini.herdr-web-ui` (do not start a manual instance next to it). Modelled on the owner's `dev.local-studio.web` plist.
